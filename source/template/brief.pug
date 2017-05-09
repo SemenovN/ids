@@ -1,0 +1,352 @@
+doctype html
+html
+	include ./includes/head.pug
+	include ./includes/mixin.pug
+	body
+		div.page
+			include ./includes/header.pug
+			main.content-page
+				form(name="brief" class="brief")
+					div.brief__app-type
+						div.picture-bgc--brif
+							div.app-type__inner
+								h1
+									span Заполните бриф
+									|на создание мобильного приложения
+					div.brief__app-type
+						//h2.section-heading Какое приложение 
+							span  Вам нужно?
+						div.app-type__graybg
+							div.app-type__inner
+								div.app-type__item
+									img(src="images/iPhone.png")
+									p iPhone/iPad
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									img(src="images/iPhone.png")
+									p Apple Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									img(src="images/iPhone.png")
+									p Android
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									img(src="images/iPhone.png")
+									p Android Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+					div.brief__app-type
+						div.brief__unit
+							div.brief__side
+								h2.section-heading.heading-brief На чьей стороне выполняется дизайн?
+								div.side__inner
+									div.option-item
+										p На стороне разработчика
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+									div.option-item
+										p Мы сами готовим
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+									div.option-item
+										p Уже есть готовый дизайн
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+									div.option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+							div.brief__side
+								h2.section-heading.heading-brief Какой интерфейс Вам нужен?
+								div.side__inner
+									div.option-item
+										p На стороне разработчика
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+									div.option-item
+										p Мы сами готовим
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+									div.option-item
+										p Уже есть готовый дизайн
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+									div.option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="design" name="design")
+											label(for="design")
+					div.brief__app-type
+						h2.section-heading.heading-brief Необходима ли авторизация в приложении? 
+						div.app-type__whitebg
+							div.app-type__inner
+								div.app-type__item
+									p iPhone/iPad
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Apple Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Android
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Android Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+					div.brief__app-type
+						div.graybgc
+							div.app-type__inner
+								div.questionnaire__name Будут ли обновляться данные в приложении через интернет?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.white-graybgc
+							div.app-type__inner
+								div.questionnaire__name Нужны ли Push-уведомления?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.graybgc
+							div.app-type__inner
+								div.questionnaire__name Будут ли обновляться данные в приложении через интернет?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.white-graybgc
+							div.app-type__inner
+								div.questionnaire__name Нужны ли Push-уведомления?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.graybgc
+							div.app-type__inner
+								div.questionnaire__name Будут ли обновляться данные в приложении через интернет?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.white-graybgc
+							div.app-type__inner
+								div.questionnaire__name Нужны ли Push-уведомления?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.graybgc
+							div.app-type__inner
+								div.questionnaire__name Будут ли обновляться данные в приложении через интернет?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.white-graybgc
+							div.app-type__inner
+								div.questionnaire__name Нужны ли Push-уведомления?
+								div.questionnaire__option-list
+									div.questionnaire__option-item
+										p Да
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Нет
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+									div.questionnaire__option-item
+										p Не знаю
+										div.select
+											input(type="radio" class="radio" id="radio" name="radio")
+											label(for="radio")
+						div.graybgc
+							div.app-type__inner
+								div.questionnaire__name Будут ли обновляться данные в приложении через интернет?
+								div.questionnaire__option-list
+									textarea()
+						div.white-graybgc
+							div.app-type__inner
+								div.questionnaire__name Нужны ли Push-уведомления?
+								div.questionnaire__option-list
+									textarea()
+					div.brief__app-type.graybgc
+						h2.section-heading.heading-brief На каком языке должен быть интерфейс приложения?
+						div.app-type__graybg
+							div.app-type__inner
+								div.app-type__item
+									p iPhone/iPad
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Apple Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Android
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Android Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+					div.brief__app-type
+						div.white-graybgc
+							div.app-type__inner
+								div.questionnaire__name Будут ли обновляться данные в приложении через интернет?
+								div.questionnaire__option-list
+									textarea()
+					div.brief__app-type.graybgc
+						h2.section-heading.heading-brief На какой стадии находится проект?
+						div.app-type__graybg
+							div.app-type__inner
+								div.app-type__item
+									p iPhone/iPad
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Apple Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Android
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+								div.app-type__item
+									p Android Watch
+									div.select
+										input(type="radio" class="radio" id="radio" name="radio")
+										label(for="radio")
+					div.brief__app-type
+						div.white-graybgc
+							div.app-type__inner
+								div.questionnaire__name Будут ли обновляться данные в приложении через интернет?
+								div.questionnaire__option-list
+									textarea()
+					div.brief__app-type
+						div.brief__unit
+							div.brief__side
+								h2.section-heading.heading-brief На чьей стороне выполняется дизайн?
+								div.side__inner
+									textarea()
+							div.brief__side
+								h2.section-heading.heading-brief Какой интерфейс Вам нужен?
+								div.side__inner
+									textarea()
+					input(class="button" type="submit" value="Заказать приложение")
+
+			include ./includes/footer.pug

@@ -1,0 +1,87 @@
+doctype html
+html
+	include ./includes/head.pug
+	body
+		div.page
+			include ./includes/header.pug
+			main.content-page
+				<!--SERVICES LIST-->
+				div.services-navigation
+					ul.services__list
+						li.services__item
+							a(class="sirvices__link--active" href="dev-mobile-app.html") Разработка мобильных приложений
+						li.services__item
+							a(class="sirvices__link" href="dev-web-app.html") Создание веб-сайтов
+						li.services__item
+							a(class="sirvices__link" href="promotion-app.html") Продвижение мобильных приложений
+				<!--//SERVICES LIST-->
+				<!--SERVICES LIST MOBILE VERSION-->
+				div.nav-mobile
+						div.nav-mobile__cur-item
+							a(href="#") Разработка мобильных приложений
+								+icon('angle-down')
+							ul.navigation-mobile__list
+								li.navigation-mobile__item
+									a(href="#" class=".navigation-mobile__link") Разработка мобильных приложений
+								li.navigation-mobile__item
+									a(href="#" class="l.navigation-mobile__link")  Создание веб-сайтов
+								li.navigation-mobile__item
+									a(href="#" class="l.navigation-mobile__link")  Продвижение мобильных приложений
+				<!--//SERVICES LIST MOBILE VERSION-->
+				<!--PREVIEW SERVICE-->
+				section.services-prev
+					div.services-prev__inner
+						div.prev__media
+							img(src="./images/MacbookWeb.png")
+						div.prev__desc
+							h1.prev__heading Создание веб-сайтов
+							div.prev__text Интернет играет важную роль в развитии и продвижении бизнеса. Создавать новые связи на рынке, быть ближе к целевой аудитории и увеличить лояльность клиентов помогает сайт. С его помощью можно подробно рассказать об услугах компании, наглядно показать продукцию, круглосуточно поддерживать обратную связь с клиентами. Мы создаём под ключ веб-сайты любой степени сложности – от посадочных страниц и сайтов-визиток до веб-порталов и интернет-магазинов. Готовый сайт решит задачи бизнеса и предоставит максимум полезной информации посетителям.
+							a(class="button" href="brief.html") Заполнить Бриф
+				<!--//PREVIEW SERVICE-->
+				<!--STAGE OF DEVELOPMENT MOBILE APP-->
+				section.stage-project
+						h2.section-heading Этапы  
+							span работ
+						div.stage-project__inner
+							div.stage-project__item
+								div.stage-project__item-number 01
+								div.stage-project__desc
+									h3.stage-project__heading Сбор информации
+									p.stage-project___text Перед тем, как приступить к работе над сайтом, мы изучаем вашу компанию и конкурентную среду, чтобы учесть особенности рынка. Это позволяет создавать решения, полезные для бизнеса и учитывающие тенденции развития и требования поисковых систем.
+							div.stage-project__item
+								div.stage-project__item-number 02
+								div.stage-project__desc
+									h3.stage-project__heading Web-дизайн и создание сайта
+									p.stage-project___text Дизайнеры разрабатывают прототип будущего сайта, совмещая современные тренды и удобный интерфейс. После согласования дизайна с клиентом, идёт отрисовка и вёрстка, программирование, настройка и наполнение сайта.
+							div.stage-project__item
+								div.stage-project__item-number 03
+								div.stage-project__desc
+									h3.stage-project__heading Тестирование
+									p.stage-project___text Сайт почти готов, но нужно проверить его на отсутствие ошибок. На этом этапе мы подключаем QA специалистов, которые выполняют необходимые тесты. Будьте уверены, ни одна ошибка не останется незамеченной!
+							div.stage-project__item
+								div.stage-project__item-number 04
+								div.stage-project__desc
+									h3.stage-project__heading Запуск
+									p.stage-project___text Когда сайт готов к запуску, мы размещаем его на хостинге и открываем для посетителей.
+				<!--//STAGE OF DEVELOPMENT MOBILE APP-->
+				<!--COST DEVELOPMENT MOBILE APPS-->
+				section.cost-dev
+					div.cost-dev__inner
+						div.cost-mobileapp__media
+							img(src="images/netbook.png")
+						div.cost-mobileapp__desc
+							h2 Сколько стоит  
+								span создание веб-сайта?
+							p В случае создания сайта по индивидуальным пожеланиям невозможно определить точную стоимость без подробной информации о проекте. Цена формируется с учётом объёма и сложности работ. Все сайты оптимизированы и подготовлены к продвижению в поисковых системах. Продвижение в стоимость создания сайта не входит.
+				<!--//COST DEVELOPMENT MOBILE APPS-->
+				<!--FORMA FOR ODER DEVELOPMENT MOBILE APP-->
+				section.form-order
+						h2.section-heading Оценка создания 
+							span веб-сайта
+						div.form-order__info
+							p Для расчёта примерной стоимости создания сайта, нам надо знать, каким вы его видите, какие функции должен выполнять сайт.
+							p Оставьте заявку на оценку работ, и мы свяжемся с вами в течение 1 рабочего дня.
+						include includes/form-order-white_bg
+				<!--//FORMA FOR ODER DEVELOPMENT MOBILE APP-->
+
+			include ./includes/footer.pug

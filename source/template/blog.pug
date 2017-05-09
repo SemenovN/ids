@@ -1,0 +1,94 @@
+doctype html
+html
+	include ./includes/head.pug
+	body
+		div.page
+			include ./includes/header.pug
+			main.content-page
+				div.blog
+					div.divider
+					div.nav-mobile
+						div.nav-mobile__cur-item
+							a(href="#") Рубрики
+								+icon('angle-down')
+							ul.navigation-mobile__list
+								li.navigation-mobile__item
+									a(href="#" class=".navigation-mobile__link") Дизайн
+								li.navigation-mobile__item
+									a(href="#" class="l.navigation-mobile__link")  Разработка
+								li.navigation-mobile__item
+									a(href="#" class="l.navigation-mobile__link")  Продвижение
+								li.navigation-mobile__item
+									a(href="#" class="l.navigation-mobile__link")  Бизнес
+					h2.section-heading Блог
+					h3.subsection-heading Дизайн
+					div.blog__wrap
+							div.blog__inner
+								section.blog__content
+									div.post-prev
+										a(href="blog-post.html")
+											img(src="images/58f893b1bf0f7.jpg")
+										div.post-prev__desc
+													a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+													div.post-prev__meta
+														ul.meta__list
+															li.meta__item
+																time( datetime="2017-04-04") 4 апреля 2017
+															li.meta__item Бизнес
+													div.post-prev__hit
+														+icon('eye')
+														span 12
+									div.post-prev
+										a(href="blog-post.html")
+												img(src="images/58f8919d516f3.jpg")
+										div.post-prev__desc
+												a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+												div.post-prev__meta
+													ul.meta__list
+														li.meta__item
+															time( datetime="2017-04-04") 4 апреля 2017
+														li.meta__item Бизнес
+												div.post-prev__hit
+														+icon('eye')
+														span 12
+									div.post-prev
+										a(href="blog-post.html")
+												img(src="images/58f893eecb626.jpg")
+												div.post-prev__desc
+														a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+														div.post-prev__meta
+															ul.meta__list
+																li.meta__item
+																	time( datetime="2017-04-04") 4 апреля 2017
+																li.meta__item Бизнес
+														div.post-prev__hit
+															+icon('eye')
+															span 12
+									div.post-prev
+										a(href="blog-post.html")
+												img(src="images/58f8931c7ff47.jpg")
+										div.post-prev__desc
+												a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+												div.post-prev__meta
+													ul.meta__list
+														li.meta__item
+															time( datetime="2017-04-04") 4 апреля 2017
+														li.meta__item Бизнес
+												div.post-prev__hit
+														+icon('eye')
+														span 12
+									div.post-prev
+										a(href="blog-post.html")
+												img(src="images/58f8925bab6cc.jpg")
+												div.post-prev__desc
+														a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+														div.post-prev__meta
+															ul.meta__list
+																li.meta__item
+																	time( datetime="2017-04-04") 4 апреля 2017
+																li.meta__item Бизнес
+														div.post-prev__hit
+															+icon('eye')
+															span 12
+								include ./includes/right-bar.pug
+			include ./includes/footer.pug

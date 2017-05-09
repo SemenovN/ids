@@ -1,0 +1,178 @@
+.footer-page {
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  @include desktop {
+  	font-size: 14px;
+  	height: 320px;
+  }
+  @include laptop {
+  	height: 482px;
+  }
+  @include phones {
+  	height: 368px;
+  }
+}
+.footer-page__wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+	text-align: left;
+}
+.footer-page__inner {
+	@include row-flex();
+	align-items: flex-start;
+}
+.footer-page__block-a {
+	@include col();
+	@include col-6();
+	@include col-md-12();
+	@include col-xs-24();
+	@include phones {
+		display: none;
+	}
+}
+
+.footer-page__block-b {
+	@include col();
+	@include col-3();
+	@include col-md-12();
+	@include col-xs-24();
+	min-width: 120px;
+	@include phones {
+		display: none;
+	}
+}
+
+.footer-page__block-c {
+	@include col();
+	@include col-7();
+	@include col-md-12();
+	@include col-xs-24();
+	a {
+			color: #fff;
+			&:hover {
+				color: #F86B55;
+			}
+		}
+	p {
+		line-height: 24px;
+		white-space: nowrap;
+	}
+	@include phones {
+		text-align: center;
+		
+		.footer-page__block-heading {
+			//display: none;
+		}
+	}
+}
+
+.footer-page__block-d {
+	@include col();
+	@include col-7();
+	@include col-md-12();
+	@include col-xs-24();
+	@include phones {
+		text-align: center;
+	}
+}
+
+.footer-page__block-heading {
+	color: #F86B55;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.footer-page__block-list {
+	margin: 0;
+	padding: 0;
+	a {
+		color: white;
+	
+	}
+}
+
+.footer-page__block-item {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	line-height: 18px;
+}
+
+.social-contact__list {
+	margin-top: 10px;
+}
+
+.social-contact__item {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+.icon-vk,
+.icon-fb,
+.icon-youtube,
+.icon-twitter,
+.icon-instagram,
+.icon-google {
+	height: 40px;
+	width: 40px;
+	fill: rgba(204, 204, 204, 0.8);
+	&:hover {
+		fill: rgba(248, 107, 85, 0.8);
+	}
+	@include desktop {
+		height: 30px;
+		width: 30px;
+	}
+}
+.subscription {
+	display: flex;
+	align-items: center;
+	@include phones {
+		justify-content: center;
+	}
+}
+.subscription__input {
+	width: 240px;
+	float: left;
+	height: 34px;
+	border-radius: 5px;
+	padding: 0 10px;
+	&:focus {
+		outline: none;
+	}
+	@include desktop {
+		width: 180px;
+	}
+}
+
+.subscription__pass {
+	background-color: #f86b55;
+	padding: 11px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.icon-plane {
+	width: 24px;
+	height: 18px;
+}
+.footer-page__copyright {
+	padding: 14px 0;
+}
+
+@media (max-width: 485px) {
+	.footer-page__block-item {
+		font-size: 12px;
+	}
+  .footer-page__copyright {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

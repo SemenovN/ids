@@ -1,0 +1,80 @@
+doctype html
+html
+	include ./includes/head.pug
+	include ./includes/mixin
+	body
+		div.page
+			include ./includes/header.pug
+			div.divider
+			main.content-page
+				section.contacts
+					h2.section-heading Контакты
+					div.contacts__inner
+						div.contacts__info
+							h3.contacts__country Россия
+							p.contacts__location 630058, Новосибирская обл., г. Новосибирск, ул. Русская, 39, офис 213
+								table.contacts__list
+									tr
+										td.contacts__label
+											span Тел.:
+										td.contacts__value
+											| 8(800) 250-01-78
+									tr
+										td
+											span E-mail:
+										td
+											| info@idsi-apps.com
+									tr
+										td
+											span График:
+										td
+											| Пн-пт с 09:00-18:00
+						div.contacts__map
+							#map1
+						div.contacts__info
+							p.contacts__location 630058, Новосибирская обл., г. Новосибирск, ул. Щетинкина, 49
+							table.contacts__list
+								tr
+									td.contacts__label
+										span Тел.:
+									td.contacts__value
+										| 8(800) 250-01-78
+								tr
+									td
+										span E-mail:
+									td
+										| info@idsi-apps.com
+								tr
+									td
+										span График:
+									td
+										| Пн-пт с 09:00-18:00
+						div.contacts__map
+							#map2
+						div.contacts__info
+							h3.contacts__country Турция
+							p.contacts__location 630058, Новосибирская обл., г. Новосибирск, ул. Русская, 39, офис 213
+								table.contacts__list
+									tr
+										td.contacts__label
+											span Тел.:
+										td.contacts__value
+											| 8(800) 250-01-78
+									tr
+										td
+											span E-mail:
+										td
+											| info@idsi-apps.com
+									tr
+										td
+											span График:
+										td
+											| Пн-пт с 09:00-18:00
+						div.contacts__map
+							#map3
+				section.form-order
+					h2.section-heading Получите бесплатную консультацию по проекту
+					include ./includes/form-order-gray_bg
+			include ./includes/footer.pug
+		script(src='https://maps.googleapis.com/maps/api/js')
+		script(src='js/googlemaps.js')

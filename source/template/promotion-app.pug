@@ -1,0 +1,81 @@
+doctype html
+html
+	include ./includes/head.pug
+	body
+		div.page
+			include ./includes/header.pug
+			main.content-page
+				<!--SERVICES LIST-->
+				div.services-navigation
+					ul.services__list
+						li.services__item
+							a(class="sirvices__link--active" href="dev-mobile-app.html") Разработка мобильных приложений
+						li.services__item
+							a(class="sirvices__link" href="dev-web-app.html") Создание веб-сайтов
+						li.services__item
+							a(class="sirvices__link" href="promotion-app.html") Продвижение мобильных приложений
+				<!--//SERVICES LIST-->
+				<!--SERVICES LIST MOBILE VERSION-->
+				div.nav-mobile
+						div.nav-mobile__cur-item
+							a(href="#") Разработка мобильных приложений
+								+icon('angle-down')
+							ul.navigation-mobile__list
+								li.navigation-mobile__item
+									a(href="#" class=".navigation-mobile__link") Разработка мобильных приложений
+								li.navigation-mobile__item
+									a(href="#" class="l.navigation-mobile__link")  Создание веб-сайтов
+								li.navigation-mobile__item
+									a(href="#" class="l.navigation-mobile__link")  Продвижение мобильных приложений
+				<!--//SERVICES LIST MOBILE VERSION-->
+				<!--PREVIEW SERVICE-->
+				section.services-prev
+					div.services-prev__inner
+						div.prev__media
+							img(src="./images/Macbook.png")
+						div.prev__desc
+							h1.prev__heading Продвижение мобильных приложений
+							div.prev__text На рынке мобильных приложений огромная конкуренция. Без продуманной стратегии продвижения вероятность успеха приложения равна нулю. Не будет установок, покупок, продажи рекламы. Потраченные на разработку деньги в таком случае можно считать выброшенными на ветер. Если вы хотите популяризировать продукт, надо обеспечить его попадание в рейтинги магазинов приложений. Мы занимаемся ASO-оптимизацией, выводом в Google Play и App Store, продвижением по ключевым словам, мотивированными и немотивированными установками и отзывами, комплексной раскруткой.
+							a(class="button" href="brief.html") Заполнить Бриф
+				<!--//PREVIEW SERVICE-->
+				<!--STAGE OF DEVELOPMENT MOBILE APP-->
+				section.stage-project
+						h2.section-heading Этапы  
+							span работ
+						div.stage-project__inner
+							div.stage-project__item.promotion-item
+								div.stage-project__item-number 01
+								div.stage-project__desc
+									h3.stage-project__heading Определение целевой аудитории и её интересов;
+							div.stage-project__item.promotion-item
+								div.stage-project__item-number 02
+								div.stage-project__desc
+									h3.stage-project__heading ASO-продвижение;
+							div.stage-project__item.promotion-item
+								div.stage-project__item-number 03
+								div.stage-project__desc
+									h3.stage-project__heading Мотивированные установки;
+							div.stage-project__item.promotion-item
+								div.stage-project__item-number 04
+								div.stage-project__desc
+									h3.stage-project__heading Использование контекстной рекламы;
+							div.stage-project__item.promotion-item
+								div.stage-project__item-number 05
+								div.stage-project__desc
+									h3.stage-project__heading Продвижение в социальных сетях;
+							div.stage-project__item.promotion-item
+								div.stage-project__item-number 06
+								div.stage-project__desc
+									h3.stage-project__heading Написание пресс-релизов.
+				<!--//STAGE OF DEVELOPMENT MOBILE APP-->
+				<!--FORMA FOR ODER DEVELOPMENT MOBILE APP-->
+				section.form-order.graybgc
+						h2.section-heading Оценка 
+							span продвижения
+						div.form-order__info
+							p Нам нужно знать, каким способом вы хотите продвигать приложение, чтобы рассчитать примерную стоимость.
+							p Оставьте заявку на оценку работ, и мы свяжемся с вами в течение 1 рабочего дня.
+						include includes/form-order-gray_bg
+				<!--//FORMA FOR ODER DEVELOPMENT MOBILE APP-->
+
+			include ./includes/footer.pug

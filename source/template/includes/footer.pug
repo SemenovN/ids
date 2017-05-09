@@ -1,0 +1,61 @@
+include ./mixin
+<!--FOOTER PAGE-->
+footer.footer-page
+	div.footer-page__wrap
+		div.footer-page__inner
+			div.footer-page__block-a
+				h4.footer-page__block-heading Полезные статьи
+				ul.footer-page__block-list
+					li.footer-page__block-item
+						a(href='#') Разработка приложений iOS
+					li.footer-page__block-item
+						a(href='#') Разработка приложений Android
+					li.footer-page__block-item
+						a(href='#') Продвижение в AppStore
+					li.footer-page__block-item
+						a(href='#') Продвижение в PlayMarket
+					li.footer-page__block-item
+						a(href='#') Мобильные приложения на заказ
+					li.footer-page__block-item
+						a(href='#') Стоимость мобильного приложения для бизнеса
+			div.footer-page__block-b
+				h4.footer-page__block-heading О компании
+				ul.footer-page__block-list
+					li.footer-page__block-item
+						a(href='#') Портфолио
+					li.footer-page__block-item
+						a(href='#') Услуги
+					li.footer-page__block-item
+						a(href='#') Контакты
+					li.footer-page__block-item
+						a(href='#') Вакансии
+					li.footer-page__block-item
+						a(href='#') Блог
+			div.footer-page__block-c
+				h4.footer-page__block-heading Контакты
+				p Адрес:  Новосибирск, ул. Русская, 39
+				p e-mail: 
+					a(href="mailto:info@idsi-apps.com")  info@idsi-apps.com
+				p Телефон: 
+					a(href="tel:+78002500178")  8 (800) 250 0178
+				p Режим работы: Пн-пт с 09:00-18:00
+				ul.social-contact__list
+					li.social-contact__item
+						+icon_link('vk', 'https://vk.com/idsi_apps')
+					li.social-contact__item
+						+icon_link('fb', 'https://www.facebook.com/idsiapps/')
+					li.social-contact__item
+						+icon_link('youtube', '#')
+					li.social-contact__item
+						+icon_link('google', 'https://plus.google.com/u/0/116956653750739961600')
+					li.social-contact__item
+						+icon_link('twitter', 'https://twitter.com/IDSI_APPS')
+					li.social-contact__item
+						+icon_link('instagram', 'https://www.instagram.com/business_apps_idsi/')
+			div.footer-page__block-d
+				h4.footer-page__block-heading e-mail рассылка от idsi
+				form(action="#" method="post" class="subscription")
+					input(class="subscription__input" type="text" name="usrname" placeholder="Ваше имя")
+					input(type="image", src="/images/plane.svg" class="subscription__pass")
+		p.footer-page__copyright © 2017 «IDSI» — разработка мобильных приложений
+<!--//FOOTER PAGE-->

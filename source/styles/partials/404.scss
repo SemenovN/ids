@@ -1,0 +1,62 @@
+.unfound {
+	background-color: #f4f4f4;
+}
+
+.unfound__inner {
+	@include row-flex();
+	justify-content: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.unfound__media {
+	@include col();
+	@include col-9();
+	@include tablets {
+		display: none;
+	}
+	height: 640px;
+	img {
+		width: 100%;
+		//max-height: 640px;
+	}
+	
+}
+
+.unfound__inf {
+	@include col();
+	@include col-sm-24();
+	text-align: center;
+	padding-bottom: 40px;
+	div {
+		font-size: 224px;
+		font-weight: 500;
+		color: #F86B55;
+		@include laptop {
+			font-size: 178px;
+		}
+		@include phones {
+			font-size: 138px;
+		}
+	}
+	p {
+		font-size: 34px;
+		text-transform: uppercase;
+		color: #F86B55;
+		font-weight: 500;
+		@include phones {
+			font-size: 22px;
+		}
+	
+	}
+	span {
+		display: block;
+		font-size: 28px;
+		color: #3b4555;
+		margin-bottom: 70px;
+		@include phones {
+			font-size: 22px;
+		}
+	}
+}

@@ -1,0 +1,111 @@
+.brief {
+	text-align: center;
+}
+
+.heading-brief {
+	font-size: 22px;
+  //white-space: nowrap;
+  padding: 26px 0;
+  &:before {
+  	bottom: 22px;
+  }
+}
+.picture-bgc--brif {
+	background-image: url(../images/brief-bg.jpg);
+}
+.app-type__graybg,
+.graybgc {
+	background-color: #f4f4f4;
+}
+
+.white-graybgc {
+	background-color: #F9F9F9;
+}
+
+.app-type__whitebg {
+	background-color: #fff;
+}
+.app-type__inner {
+	@include row-flex();
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0;
+	justify-content: center;
+
+}
+
+.app-type__item {
+	@include col();
+	@include col-6();
+	@include col-xs-24();
+	p {
+		font-size: 16px;
+		color: #3b4555;
+		padding: 20px 0;
+	}
+}
+
+.select {
+	display: block;
+}
+
+.brief__unit {
+	@include row-flex();
+	margin: 0;
+}
+
+.brief__side {
+	@include col();
+	@include col-12();
+	@include col-sm-24();
+}
+
+.side__inner {
+	@include row-flex();
+	background-color: #f4f4f4;
+	padding: 40px 0;
+	p {
+		font-size: 16px;
+		color: #3b4555;
+		padding: 20px 0;
+		white-space: nowrap;
+	}
+}
+
+.option-item {
+	@include col();
+	@include col-12();
+	@include col-xs-24();
+}
+
+.questionnaire__name {
+	@include col();
+	@include col-8();
+	@include col-sm-24();
+	font-size: 20px;
+	font-weight: 300;
+	text-align: left;
+	padding: 20px 0;
+	@include tablets {
+		text-align: center;
+	}
+}
+
+.questionnaire__option-list {
+	@include row-flex();
+	@include col();
+	@include col-16();
+	@include col-sm-24();
+}
+
+.questionnaire__option-item {
+	@include col();
+	@include col-8();
+	@include col-xs-24();
+	p {
+		font-size: 16px;
+		color: #3b4555;
+		padding: 20px 0;
+		white-space: nowrap;
+	}
+}

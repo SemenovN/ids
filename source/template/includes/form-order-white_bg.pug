@@ -1,0 +1,37 @@
+include mixin
+div.form__wrap
+					form(name="formOrder" class="form")
+						div.form__inner
+							div.form__side--right
+								select(class="turnintodropdown" data-style="gray")
+									option(value="") Выбирите услугу
+									option(value="Разаработка сайта") Разаработка сайта
+									option(value="Разаработка мобильного приложения") Разаработка мобильного приложения
+									option(value="Продвижение в социальных медиа(SMM)") Продвижение в социальных медиа(SMM)
+									option(value="Системная интеграция") Системная интеграция
+									option(value="Техническая поддержка") Техническая поддержка
+								input(class="form__input--gray" type="text" name="usrname" placeholder="Ваше имя")
+								input(class="form__input--gray" type="tel" name="usrtel" placeholder="Телефон")
+								input(class="form__input--gray" type="email" name="email" placeholder="E-mail")
+								p.budget Бюджет
+								div.budget__list
+									label(class="active")
+										input(type="radio" name="budget" value="менее 200 тыс.")
+										p менее 200 тыс.
+									label(class="active")
+										input(type="radio" name="budget" value="от 200 тыс. до 700 тыс.")
+										p от 200 тыс. до 700 тыс.
+									label(class="budget__item")
+										input(type="radio" name="budget" value="от 700 тыс. до 2 млн.")
+										p от 700 тыс. до 2 млн.
+									label(class="budget__item")
+										input(type="radio" name="budget" value="от 2 млн. до 5 млн.")
+										p от 2 млн. до 5 млн.
+							div.form__side--left
+								textarea(class="form__textarea--gray" placeholder="Краткая постоновка задачи")
+								div.file-upload
+									label
+										input(type="file")
+										+icon('clip')
+										span Прикрепить файл
+						input(class="button" type="submit" value="Оставить заявку")

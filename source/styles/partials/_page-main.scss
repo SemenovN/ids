@@ -1,0 +1,50 @@
+.application-area {
+	text-align: center;
+}
+
+.application-area__inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.application-area__list {
+	@include row-flex();
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px 0;
+	@include phones {
+		justify-content: center;
+	}
+}
+
+.application-area__item {
+	margin-bottom: 30px;
+	@include col();
+	@include col-6();
+	@include col-xs-8();
+	text-align: center;
+	span {
+		display: block;
+		margin-top: 30px;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 24px;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+}
+
+.icon-banks,
+.icon-retail,
+.icon-tourism,
+.icon-medecine,
+.icon-taxi,
+.icon-avia,
+.icon-fitness,
+.icon-media {
+	width: 68px;
+	height: 68px;
+	stroke: #98a7c1;
+	fill: #98a7c1;
+	stroke-width: 0;
+}

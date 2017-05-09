@@ -1,0 +1,41 @@
+doctype html
+html
+	include ./includes/head.pug
+	include ./includes/mixin.pug
+	body
+		div.page
+			include ./includes/header.pug
+			main.content-page
+				section.application-area
+					div.application-area__inner
+						//h2.section-heading Увеличение использования мобильных приложений 
+							span наблюдается в следующих сферах:
+						div.application-area__list
+							div.application-area__item
+								+icon('banks')
+								span Банки
+							div.application-area__item
+								+icon('retail')
+								span Ритейл
+							div.application-area__item
+								+icon('tourism')
+								span Туризм
+							div.application-area__item
+								+icon('taxi')
+								span Такси
+							div.application-area__item
+								+icon('avia')
+								span Авиа
+							div.application-area__item
+								+icon('fitness')
+								span Фитнес
+							div.application-area__item
+								+icon('media')
+								span Медиа
+							div.application-area__item
+								+icon('medecine')
+								span Медецина
+				section.form-order
+					include includes/form-order-white_bg
+			
+			include ./includes/footer.pug

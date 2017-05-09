@@ -1,0 +1,298 @@
+/* services-navigation style begin */
+.services-navigation {
+    width: 100%;
+    background-color: black;
+    padding: 6px 0;
+    @include tablets {
+        display: none;
+    }
+}
+
+.services__list {
+    text-align: center;
+    margin: 0;
+}
+
+.services__item {
+    list-style-type: none;
+    line-height: 38px;
+    text-align: left;
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.sirvices__link {
+    color: white;
+}
+
+.sirvices__link--active,
+.sirvices__link:hover {
+    color: #F86B55;
+}  
+/* services-navigation style end */
+
+/* SERVICIES PREVIEW BEGIN */
+.services-prev {
+    background-color: #f5f5f7;
+    //background-image: url(../img/MacbookWeb.png);
+    //background-repeat: no-repeat;
+    //background-position: left center;
+    //background-size: 900px 350px;
+    //min-height: 450px;
+}
+
+.services-prev__inner {
+	@include row-flex();
+	justify-content: space-around;
+    max-width: 1200px;
+    min-height: 500px;
+    margin: 0 auto;
+    //padding: 20px 30px;
+    @include screen320 {
+        padding: 20px 0;
+    }
+}
+.services-prev__inner--bg {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+}
+
+.prev__desc--bg {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+.prev__media {
+  @include col();
+  @include col-8();
+  @include col-md-24();
+  position: relative;
+  img {
+    width: 230%;
+    position: absolute;
+    left: -60%;
+    top: 50%;
+    margin-top: -50%;
+    @include laptop {
+      position: static;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+.dev-app__media {
+    max-height: 450px;
+    overflow: hidden;
+    text-align: center;
+    @include phones {
+        max-height: 400px;
+    }
+    img {
+        position: static;
+        width: 100%;
+        max-width: 350px;
+        margin-top: 30px;
+    }
+  }
+
+.prev__desc {
+    @include col();
+    @include col-14();
+    @include col-md-24();
+    text-align: left;
+    padding: 0 0 0 30px;
+    @include laptop {
+      order: -1;
+      text-align: center;
+  }
+  @include phones {
+    padding: 0;
+  }
+}
+
+.prev__heading {
+    color: #F86B55;
+    font-size: 38px;
+    line-height: 38px;
+    padding-top: 30px;
+    //padding-bottom: 30px;
+    font-weight: 500;
+    @include phones {
+    	font-size: 22px;
+    	line-height: 32px;
+    }
+    @include screen320 {
+    	font-size: 18px;
+    	line-height: 26px;
+    }
+}
+.prev__text {
+    color: #3B4555;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    margin: 10px 0;
+    //padding-bottom: 30px;
+
+    @include phones {
+    	font-size: 14px;
+    	line-height: 24px;
+    }
+    @include screen320 {
+    	font-size: 12px;
+    	line-height: 22px;
+    }
+}
+/* SERVICIES PREVIEW END */
+
+/*STAGE OF PROJECT BEGIN */
+
+.stage-project {
+  text-align: center;
+  background-color: #fff;
+}
+
+.stage-project__inner {
+	@include row-flex();
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 40px 0;
+  @include phones {
+  	padding: 24px 0 0;
+  }
+  @include screen320 {
+  	padding: 24px 0 0;
+  }
+}
+
+.stage-project__item {
+    @include col();
+	@include col-12();
+	@include col-sm-24();
+    display: flex;
+}
+
+.promotion-item {
+    @include col();
+    @include col-24();
+}
+
+.stage-project__item-number {
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: #F86B55;
+    line-height: 44px;
+    @include screen320 {
+    	font-size: 24px;
+    }
+}
+
+.stage-project__desc {
+    float: left;
+    padding-left: 28px;
+    padding-right: 5px;
+    width: 80%;
+    text-align: left;
+    @include screen320 {
+    	padding-left: 12px;
+    }
+}
+
+.stage-project__heading {
+    flex-direction: row;
+    width: 100%;
+    color: #3B4555;
+    line-height: 44px;
+    font-weight: 500;
+    font-size: 20px;
+    @include screen320 {
+    	font-size: 18px;
+    }
+}
+
+.stage-project___text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    @include phones {
+    	font-size: 14px;
+    }
+    @include screen320 {
+    	font-size: 12px;
+    }
+}
+/*STAGE OF PROJECT END */
+/* COST APP BEGIN */
+.cost-dev {
+    background-color: #F5F5F7;
+}
+
+.cost-dev__inner {
+    @include row-flex();
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.cost-mobileapp__media {
+    @include col();
+    @include col-12();
+    @include col-md-24();
+    text-align: center;
+    img {
+        display: block;
+        margin: -89px auto 0;
+        width: 500px;
+        @include phones {
+            width: 300px;
+            margin: -54px auto 0;
+        }
+        @include screen320 {
+            width: 288px;
+            margin: -51px auto 0;
+        }
+    }
+}
+
+.cost-mobileapp__desc {
+    @include col();
+    @include col-12();
+    @include col-md-24();
+    padding: 12px 0 0 40px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    //min-width: 420px;
+    p {
+        padding: 18px 0;
+    }
+    h2 {
+        color: #3B4555;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 300;
+        span {
+            font-weight: 500;
+        }
+        @include phones {
+            font-size: 26px;
+        }
+    }
+    @include phones {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+}
+.cost-mobile__desc {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: rubiklight;
+  font-weight: 300; }
+/* COST APP END */

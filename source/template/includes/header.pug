@@ -1,0 +1,66 @@
+include ./mixin
+<!--HEADER PAGE-->
+header.header-page
+	div.header-page__inner
+		div.header-page__menu-mobile
+			div.menu-mobile__switch
+				+icon('hamburger')
+		//div.menu-mobile__panel
+			div.header-page__logo-mwrap
+				a(class='header-page__logo-link' href="./")
+					img(src="./images/svg/logo-white.svg")
+		div.header-page__logo-wrap
+			a(class='header-page__logo-link' href="./")
+				img(src="./images/svg/logo.svg")
+		div.header-page__phone-mobile
+			a(href="tel:+78002500178")
+				+icon('phone')
+		nav.header-page__menu
+			ul.menu__list
+				li.menu__item
+					a(href="./" class='menu__link') Главная
+				li
+					+icon('menu-item-divider')
+				li.menu__item
+					a(href="./servicies.html" class='menu__link') Услуги
+				li
+					+icon('menu-item-divider')
+				li.menu__item
+					a(href="./portfolio.html" class='menu__link') Портфолио
+				li
+					+icon('menu-item-divider')
+				li.menu__item
+					a(href="./blog.html" class='menu__link') Блог
+				li
+					+icon('menu-item-divider')
+				li.menu__item
+					a(href="./vacancies.html" class='menu__link') Вакансии
+				li
+					+icon('menu-item-divider')
+				li.menu__item
+					a(href="./contacts.html" class='menu__link') Контакты
+		div.header-page__locales
+			a(href="#")
+				img(src="images/flag/RU.jpg")
+				|Русский
+				+icon('angle-down')
+			ul.locales__list
+					li.locales__item
+						a(href="#" class="locales__link")
+							img(src="images/flag/RU.jpg")
+							|Русский
+					li.locales__item
+						a(href="#" class="locales__link")
+							img(src="images/flag/TR.jpg")
+							|Türkçe
+		div.header-page__contacts
+			ul.contacts__list--heder
+				li.contacts__item--heder
+					a(href="tel:+78002500178" class='contacts__link--heder') 
+						+icon('somephone')
+						| 8 (800) 250 01 78
+				li.contacts__item--heder
+					a(href='mailto:info@idsi-apps.com' class='contacts__link--heder')
+						+icon('mail')
+						| info@idsi-apps.com
+<!--//HEADER PAGE-->
